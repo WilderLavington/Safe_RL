@@ -1,0 +1,35 @@
+ACTIONS: 5
+ACTION_CLIP: None
+ACTION_SIZE: 1
+ACTION_TRANSFORM: 'lambda action: action'
+AGENT_MODEL: GRID_WORLD_1_POLICY
+ALPHA: 0.99
+BATCH_SIZE: 25
+BETA_1: 0.8
+BETA_2: 0.9
+GAMMA: 0.5
+GRID_SIZE: small
+GRID_TYPE: cliff
+HIDDEN_LAYER_SIZE: 32
+INCLUDE_VARIANCE_CALC: true
+INV_REWARD_SHAPING: 'lambda r: r'
+ITERATIONS: 100
+LAMBDA: 0.0001
+LEARNING_RATE: 0.005
+LOSS_DATA_STORAGE: results/grid_world/cliff/deterministic/small/MEPG/loss.pt
+LOSS_PLOT_STORAGE: results/grid_world/cliff/deterministic/small/MEPG/loss.png
+NORMALIZE: true
+OBJECTIVE_TYPE: MEPG
+OPTIMIZE: SGD
+OPTIM_PROB: 1.0
+REWARD_SHAPING: 'lambda r: r'
+SAMPLE_SIZE: 50
+STATE_CLIP: None
+STATE_SIZE: 2
+STEP_INTERVAL: 200
+STOCHASTICITY: 0.0
+TRAJECTORY_LENGTH: 50
+VARIANCE_DATA_STORAGE: results/grid_world/cliff/deterministic/small/MEPG/variance.pt
+VARIANCE_PLOT_STORAGE: results/grid_world/cliff/deterministic/small/MEPG/variance.png
+WEIGHT_DECAY: 0.0
+WORKERS: 4
